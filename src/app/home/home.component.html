@@ -1,0 +1,14 @@
+<h2>Persons</h2>
+<ul class="users">
+  <li *ngFor="let user of users">
+    <span class="badge">{{user.id}}</span> {{user.firstName}}
+  </li>
+</ul>
+<h2>{{user.firstName}} Details</h2>
+<div><span>id: </span> {{user.id}} </div>
+<div><span>email: </span> {{user.email}} </div>
+<div>
+  <label>
+    <input [(ngModel)]="user.firstName" placeholder="name">
+  </label>
+</div>
